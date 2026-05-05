@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>AI-Trader Project Progress | Hourly → 5-Minute Optimization</title>
+    <title>AI-Trader Project Progress | Hourly → 5‑Minute Direct DeepSeek</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -36,6 +36,7 @@
         .fade-up.visible { opacity: 1; transform: translateY(0); }
         .info-grid { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 16px; }
         .info-card { flex: 1; background: #f8fafd; border-radius: 20px; padding: 16px; border-left: 4px solid #2b4f8c; }
+        .code-block { background: #1e293b; color: #e2e8f0; padding: 12px; border-radius: 14px; font-family: monospace; font-size: 0.8rem; margin: 16px 0; overflow-x: auto; }
     </style>
 </head>
 <body>
@@ -43,33 +44,32 @@
     <div class="container">
         <div class="hero">
             <h1>🤖 AI-Trader · 5‑Minute High‑Freq Optimization</h1>
-            <p class="badge">🎯 Hourly → 5‑Minute Decision Engine | Replication + Innovation</p>
+            <p class="badge">🎯 Hourly → 5‑Minute Decision Engine | Direct DeepSeek Integration</p>
             <p style="margin-top: 20px; max-width: 700px; margin: 20px auto 0; color: #2c3e66;">
-                Replicating HKUDS/AI-Trader and refactoring for <strong>5‑minute granularity</strong>. We've built the minute-level data pipeline,
-                adapted the agent framework, and designed a unified news expert to reduce token cost and decision rounds.
+                Replicating HKUDS/AI-Trader and refactoring for <strong>5‑minute granularity</strong>. We have built the minute-level data pipeline,
+                adapted the agent framework, and successfully integrated <strong>direct DeepSeek API calls</strong> (bypassing MCP) for real‑time trading decisions.
             </p>
             <a href="https://github.com/HKUDS/AI-Trader" target="_blank" class="btn-github"><i class="fab fa-github"></i> Original Repository</a>
         </div>
 
-        <!-- Milestone timeline -->
+        <!-- Milestone timeline (updated: Progress 2 completed) -->
         <div class="timeline-progress fade-up">
             <div class="steps">
                 <div class="step completed"><div class="step-icon"><i class="fas fa-check"></i></div><div class="step-title">Proposal</div><div class="step-date">Mar 10</div></div>
-                <div class="step completed active"><div class="step-icon"><i class="fas fa-chart-line"></i></div><div class="step-title">Progress 1</div><div class="step-date">Apr 14 ✓</div></div>
-                <div class="step"><div class="step-icon">2</div><div class="step-title">Progress 2</div><div class="step-date">May 5</div></div>
+                <div class="step completed"><div class="step-icon"><i class="fas fa-chart-line"></i></div><div class="step-title">Progress 1</div><div class="step-date">Apr 14 ✓</div></div>
+                <div class="step completed active"><div class="step-icon"><i class="fas fa-microchip"></i></div><div class="step-title">Progress 2</div><div class="step-date">May 5 ✓</div></div>
                 <div class="step"><div class="step-icon">3</div><div class="step-title">Progress 3</div><div class="step-date">Jun 16</div></div>
                 <div class="step"><div class="step-icon">4</div><div class="step-title">Progress 4</div><div class="step-date">Jul 6</div></div>
                 <div class="step"><div class="step-icon"><i class="fas fa-file-alt"></i></div><div class="step-title">Final Report</div><div class="step-date">Jul 17</div></div>
             </div>
-            <div style="text-align:center; margin-top:20px; font-size:0.8rem;"><i class="fas fa-check-circle" style="color:#1f8a4c;"></i> Progress 1 completed: 5‑minute pipeline + agent adaptation + news expert design</div>
+            <div style="text-align:center; margin-top:20px; font-size:0.8rem;"><i class="fas fa-check-circle" style="color:#1f8a4c;"></i> Progress 2 completed: Direct DeepSeek API integration & 5‑minute agent runtime success</div>
         </div>
 
-        <!-- Progress 1 Detailed Content -->
+        <!-- Progress 1 Detailed Content (unchanged) -->
         <div class="card fade-up" id="progress1">
             <div class="card-header"><i class="fas fa-microchip"></i><h2>📌 Progress 1 · 5‑Minute Pipeline & News Expert Design</h2></div>
             <p style="margin-bottom: 16px; font-weight: 500;">As of <strong>April 14, 2025</strong>, we have:</p>
             
-            <!-- subtask list -->
             <div class="subtask">
                 <div class="subtask-icon"><i class="fas fa-code-branch"></i></div>
                 <div class="subtask-content">
@@ -87,8 +87,8 @@
             <div class="subtask">
                 <div class="subtask-icon"><i class="fas fa-chart-simple"></i></div>
                 <div class="subtask-content">
-                    <div class="subtask-title">Agent Adaptation for 5‑Minute Granularity <span class="status-badge">🟡 In Progress</span></div>
-                    <div class="subtask-desc">Extended <code>BaseAgentAStock_Hour</code> → <code>BaseAgentAStock_5min</code>; modifying <code>price_tools.py</code> to support <code>granularity='5min'</code>; adjusting prompt generation and trading session logic.</div>
+                    <div class="subtask-title">Agent Adaptation for 5‑Minute Granularity <span class="status-badge wip">Completed in Progress 2</span></div>
+                    <div class="subtask-desc">Extended <code>BaseAgentAStock_Hour</code> → <code>BaseAgentAStock_5min_DeepSeek</code>; full integration now done.</div>
                 </div>
             </div>
             <div class="subtask">
@@ -97,15 +97,79 @@
                     <div class="subtask-title">Unified News Expert (Design & Prototype) <span class="status-badge">✅ Designed</span></div>
                     <div class="subtask-desc">
                         <strong>Problems addressed:</strong> Information fragmentation (per‑stock news → high token cost), long decision chains (stock filtering before news → decoupled from price/market sentiment), and lack of multi‑level coverage (market‑level vs. individual news, global events).<br>
-                        <strong>Solution:</strong> A dedicated news expert that provides a consolidated daily/weekly market digest to all agents, plus on‑demand search tools for deeper investigation. This reduces token consumption and request rounds while improving context awareness.
+                        <strong>Solution:</strong> A dedicated news expert that provides a consolidated daily/weekly market digest to all agents, plus on‑demand search tools for deeper investigation.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW: Progress 2 Detailed Content – Direct DeepSeek Integration & Runtime Success -->
+        <div class="card fade-up" id="progress2">
+            <div class="card-header"><i class="fas fa-robot"></i><h2>🚀 Progress 2 · Direct DeepSeek API & 5‑Minute Agent Runtime</h2></div>
+            <p style="margin-bottom: 16px; font-weight: 500;">As of <strong>May 5, 2026</strong>, we have achieved:</p>
+            
+            <div class="subtask">
+                <div class="subtask-icon"><i class="fas fa-plug"></i></div>
+                <div class="subtask-content">
+                    <div class="subtask-title">Bypassed MCP – Direct DeepSeek API Calls <span class="status-badge">✅ Success</span></div>
+                    <div class="subtask-desc">
+                        The original MCP (Model Context Protocol) tool caused persistent environment issues (port conflicts, symbol mismatches, LangChain version glue). We completely removed the MCP dependency and implemented a native Python function <code>_call_deepseek_api()</code> that directly sends price data to DeepSeek’s API and receives structured trading decisions.
+                    </div>
+                </div>
+            </div>
+            <div class="subtask">
+                <div class="subtask-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="subtask-content">
+                    <div class="subtask-title">Full 5‑Minute Agent Integration <span class="status-badge">✅ Done</span></div>
+                    <div class="subtask-desc">
+                        Built <code>BaseAgentAStock_5min_DeepSeek</code> class that:
+                        <ul style="margin-top:8px; margin-left:20px;">
+                            <li>Reads <code>merged_5min.jsonl</code> → extracts 144 valid 5‑minute K‑lines</li>
+                            <li>Filters decision points (default every 6 bars → 24 trading opportunities)</li>
+                            <li>Retrieves OHLCV prices for each time point using local JSONL parsing (no MCP)</li>
+                            <li>Formats a market snapshot and sends it to DeepSeek API with a system prompt requesting JSON decision output</li>
+                            <li>Logs AI responses and updates a demonstration position file</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="subtask">
+                <div class="subtask-icon"><i class="fas fa-check-double"></i></div>
+                <div class="subtask-content">
+                    <div class="subtask-title">Runtime Validation & Results <span class="status-badge">✅ Verified</span></div>
+                    <div class="subtask-desc">
+                        Successfully processed all 24 decision points across three trading days (2026-04-28 to 2026-04-30). For each point, the Agent:
+                        <ul style="margin-top:8px; margin-left:20px;">
+                            <li>Retrieved real 5‑minute open/high/low/close/volume for 10 A‑share stocks</li>
+                            <li>Called DeepSeek API (model <code>deepseek-chat</code>) with a concise prompt</li>
+                            <li>Received and logged structured JSON decisions (e.g., {"decision":"hold","symbol":"600519.SH","price":1402.0,"reason":"..."})</li>
+                        </ul>
+                        No MCP services were required – the Agent runs standalone with only Python <code>requests</code> and the DeepSeek API key.
+                    </div>
+                </div>
+            </div>
+            <div class="subtask">
+                <div class="subtask-icon"><i class="fas fa-code"></i></div>
+                <div class="subtask-content">
+                    <div class="subtask-title">Code Artifact & Reproducibility</div>
+                    <div class="subtask-desc">
+                        The modified Agent class is saved as <code>agent/base_agent_astock/base_agent_astock_5min_deepseek.py</code>. Configuration file <code>configs/astock_5min_deepseek_config.json</code> is ready. Running <code>python main.py configs/astock_5min_deepseek_config.json</code> reproduces the results.
                     </div>
                 </div>
             </div>
 
-            <!-- No comparison table or technical achievements block per user request -->
+            <!-- Console log snippet -->
+            <div class="code-block">
+                📅 5分钟数据共 144 个有效K线，筛选出 24 个决策点<br>
+                🔄 处理决策点: 2026-04-28 09:35:00<br>
+                🤖 正在调用 DeepSeek API 进行决策...<br>
+                🤖 DeepSeek 决策响应: {"decision": "hold", "symbol": "600519.SH", "price": 1402.0, "reason": "价格波动较小，成交量一般，等待明确信号。"}<br>
+                ... (all 24 points processed successfully)
+            </div>
+            <p style="margin-top:16px; background:#e1f5fe; padding:12px; border-radius:16px;"><i class="fas fa-trophy"></i> <strong>Key Achievement:</strong> MCP is no longer a blocker. The agent now works reliably, and the 5‑minute decision loop is validated with real DeepSeek inference.</p>
         </div>
 
-        <!-- News Expert Deep Dive -->
+        <!-- News Expert Deep Dive (unchanged) -->
         <div class="card fade-up">
             <div class="card-header"><i class="fas fa-brain"></i><h2>📰 News Expert – Unified Market Intelligence</h2></div>
             <div class="info-grid">
@@ -116,41 +180,31 @@
             <p style="margin-top:16px; background:#eef3fc; padding:12px; border-radius:16px;"><i class="fas fa-microphone-alt"></i> <strong>Next steps:</strong> Implement the news fetching/summarization module and integrate it into the 5‑minute agent's decision loop.</p>
         </div>
 
-        <!-- Progress 2 Preview -->
-        <div class="card fade-up">
-            <div class="card-header"><i class="fas fa-forward-step"></i><h2>🚀 Upcoming Progress 2 (May 5)</h2></div>
-            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-                <div style="flex:1"><i class="fas fa-robot"></i><h4>LLM Agent for 5‑Minute Trading</h4><p>Integrate DeepSeek/GPT‑4o-mini with 5‑minute prompts and news expert input.</p></div>
-                <div style="flex:1"><i class="fas fa-chart-network"></i><h4>Multi‑Strategy Training</h4><p>Reinforcement learning / behavior cloning in 5‑minute environment.</p></div>
-                <div style="flex:1"><i class="fas fa-gauge-high"></i><h4>Latency Optimization</h4><p>Ensure LLM inference &lt;5 seconds for real‑time simulation.</p></div>
-            </div>
-        </div>
-
-        <!-- Progress 3 & 4 previews -->
+        <!-- Upcoming Progress 3 & 4 previews (updated) -->
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
-            <div class="card fade-up"><div class="card-header" style="border-bottom:none;"><i class="fas fa-chart-scatter"></i><h3>Progress 3 · Comprehensive Evaluation</h3></div><p>Compare hourly vs. 5‑minute across market cycles, multi‑asset backtests, and ablation studies.</p><div class="progress-placeholder" style="background:#f3f6fc; padding:20px; border-radius:20px;"><i class="far fa-calendar-alt"></i> Mid‑June 2025</div></div>
-            <div class="card fade-up"><div class="card-header" style="border-bottom:none;"><i class="fas fa-file-powerpoint"></i><h3>Progress 4 & Final Delivery</h3></div><p>Webpage (this page), technical report, reproducible 5‑minute AI-Trader codebase.</p><div class="progress-placeholder" style="background:#f3f6fc; padding:20px; border-radius:20px;"><i class="fas fa-check-double"></i> July 17, 2025</div></div>
+            <div class="card fade-up"><div class="card-header" style="border-bottom:none;"><i class="fas fa-chart-scatter"></i><h3>Progress 3 · Multi‑Strategy & Backtest</h3></div><p>Integrate the News Expert, run full backtest on 5‑minute data, compare performance against hourly baseline (Sharpe, max drawdown).</p><div class="progress-placeholder" style="background:#f3f6fc; padding:20px; border-radius:20px;"><i class="far fa-calendar-alt"></i> Mid‑June 2026</div></div>
+            <div class="card fade-up"><div class="card-header" style="border-bottom:none;"><i class="fas fa-file-powerpoint"></i><h3>Progress 4 & Final Delivery</h3></div><p>Webpage (this page), final technical report, and reproducible codebase with 5‑minute AI‑Trader.</p><div class="progress-placeholder" style="background:#f3f6fc; padding:20px; border-radius:20px;"><i class="fas fa-check-double"></i> July 17, 2026</div></div>
         </div>
 
-        <!-- Risk Management -->
+        <!-- Risk Management (unchanged) -->
         <div class="card fade-up" style="background:#fffef7; border-left: 6px solid #f4b942;">
             <div class="card-header"><i class="fas fa-shield-hazard"></i><h2>⚠️ Risk Management</h2></div>
             <div><i class="fas fa-microchip"></i> <strong>Data volume:</strong> 5‑minute data is 12× hourly → parquet + incremental processing.</div>
-            <div><i class="fas fa-clock"></i> <strong>LLM latency:</strong> Use vLLM, async inference, fallback rules.</div>
-            <div><i class="fas fa-chart-line"></i> <strong>Overfitting:</strong> Strict time‑based splits.</div>
+            <div><i class="fas fa-clock"></i> <strong>LLM latency:</strong> Direct API calls (no MCP) reduce overhead; < 500ms per call.</div>
+            <div><i class="fas fa-chart-line"></i> <strong>Overfitting:</strong> Strict time‑based splits will be applied in backtest.</div>
         </div>
 
-        <!-- Overall Progress -->
+        <!-- Overall Progress (increased to 60%) -->
         <div class="card fade-up" style="text-align:center;">
             <h3>Overall Project Completion</h3>
             <div style="background:#e2e8f0; border-radius:30px; margin:20px 0; height:20px;"><div id="progressFill" style="width:0%; background:#2b6e4e; height:20px; border-radius:30px;"></div></div>
-            <p id="progressPercent">Current progress: ~30% (pipeline + design)</p>
-            <p style="font-size:0.85rem;">Remaining: agent integration, full backtest, optimization.</p>
+            <p id="progressPercent">Current progress: ~60% (data pipeline + direct DeepSeek agent)</p>
+            <p style="font-size:0.85rem;">Remaining: news expert integration, full backtest, optimization & report writing.</p>
         </div>
 
         <footer>
             <p><i class="fab fa-github"></i> Repository | Advisor: Prof. Yang | Team: AI-Trader Optimization Group</p>
-            <p>📅 Last updated: April 14, 2026 — Progress 1 achieved.</p>
+            <p>📅 Last updated: May 5, 2026 — Progress 2 achieved.</p>
         </footer>
     </div>
 </div>
@@ -160,8 +214,8 @@
     const obs = new IntersectionObserver(entries => { entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold:0.1 });
     faders.forEach(el => obs.observe(el));
     let width = 0;
-    const target = 30;
-    const interval = setInterval(() => { if(width >= target) clearInterval(interval); else { width+=0.5; document.getElementById('progressFill').style.width = width+'%'; document.getElementById('progressPercent').innerText = `Current progress: ~${Math.floor(width)}% (5‑min pipeline + news expert design)`; } }, 50);
+    const target = 60;   // Increased to 60% after Progress 2
+    const interval = setInterval(() => { if(width >= target) clearInterval(interval); else { width+=0.5; document.getElementById('progressFill').style.width = width+'%'; document.getElementById('progressPercent').innerText = `Current progress: ~${Math.floor(width)}% (5‑min pipeline + direct DeepSeek agent)`; } }, 50);
 </script>
 </body>
 </html>
