@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>AI-Trader Project Progress | Hourly → 5‑Minute Direct DeepSeek</title>
+    <title>AI-Trader Project Progress | Multi‑Market LLM Trading Benchmark</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -43,32 +43,34 @@
 <div class="bg-gradient-soft">
     <div class="container">
         <div class="hero">
-            <h1>🤖 AI-Trader · 5‑Minute High‑Freq Optimization</h1>
-            <p class="badge">🎯 Hourly → 5‑Minute Decision Engine | Direct DeepSeek Integration</p>
+            <h1>🤖 AI-Trader · Multi‑Market LLM Trading Benchmark</h1>
+            <p class="badge">🎯 US / HK / CN / Crypto Four Markets | 6‑Layer Modular Backtest Framework | Multi‑Model Cross‑Comparison</p>
             <p style="margin-top: 20px; max-width: 700px; margin: 20px auto 0; color: #2c3e66;">
-                Replicating HKUDS/AI-Trader and refactoring for <strong>5‑minute granularity</strong>. We have built the minute-level data pipeline,
-                adapted the agent framework, and successfully integrated <strong>direct DeepSeek API calls</strong> (bypassing MCP) for real‑time trading decisions.
+                An LLM Agent trading backtest benchmark platform built from scratch, covering <strong>US, HK, CN, and Crypto</strong> markets.
+                Features a <strong>6‑layer pluggable architecture</strong> (Core → Data → Portfolio → Agent → Evaluation → Platform),
+                supporting multi‑model integration and cross‑comparison. Currently integrated with DeepSeek, Mimo, and more.
             </p>
             <a href="https://github.com/HKUDS/AI-Trader" target="_blank" class="btn-github"><i class="fab fa-github"></i> Original Repository</a>
+            <a href="https://github.com/Mint-green/llm-trading-benchmark" target="_blank" class="btn-github" style="margin-left:12px;"><i class="fab fa-github"></i> Our Repository</a>
         </div>
 
-        <!-- Milestone timeline (updated: Progress 2 completed) -->
+        <!-- Milestone timeline (updated: Progress 3 completed) -->
         <div class="timeline-progress fade-up">
             <div class="steps">
                 <div class="step completed"><div class="step-icon"><i class="fas fa-check"></i></div><div class="step-title">Proposal</div><div class="step-date">Mar 10</div></div>
                 <div class="step completed"><div class="step-icon"><i class="fas fa-chart-line"></i></div><div class="step-title">Progress 1</div><div class="step-date">Apr 14 ✓</div></div>
-                <div class="step completed active"><div class="step-icon"><i class="fas fa-microchip"></i></div><div class="step-title">Progress 2</div><div class="step-date">May 5 ✓</div></div>
-                <div class="step"><div class="step-icon">3</div><div class="step-title">Progress 3</div><div class="step-date">Jun 16</div></div>
+                <div class="step completed"><div class="step-icon"><i class="fas fa-microchip"></i></div><div class="step-title">Progress 2</div><div class="step-date">May 5 ✓</div></div>
+                <div class="step completed active"><div class="step-icon"><i class="fas fa-check"></i></div><div class="step-title">Progress 3</div><div class="step-date">Jun 16 ✓</div></div>
                 <div class="step"><div class="step-icon">4</div><div class="step-title">Progress 4</div><div class="step-date">Jul 6</div></div>
                 <div class="step"><div class="step-icon"><i class="fas fa-file-alt"></i></div><div class="step-title">Final Report</div><div class="step-date">Jul 17</div></div>
             </div>
-            <div style="text-align:center; margin-top:20px; font-size:0.8rem;"><i class="fas fa-check-circle" style="color:#1f8a4c;"></i> Progress 2 completed: Direct DeepSeek API integration & 5‑minute agent runtime success</div>
+            <div style="text-align:center; margin-top:20px; font-size:0.8rem;"><i class="fas fa-check-circle" style="color:#1f8a4c;"></i> Progress 3 completed: Multi‑market LLM benchmark platform validated</div>
         </div>
 
         <!-- Progress 1 Detailed Content (unchanged) -->
         <div class="card fade-up" id="progress1">
             <div class="card-header"><i class="fas fa-microchip"></i><h2>📌 Progress 1 · 5‑Minute Pipeline & News Expert Design</h2></div>
-            <p style="margin-bottom: 16px; font-weight: 500;">As of <strong>April 14, 2025</strong>, we have:</p>
+            <p style="margin-bottom: 16px; font-weight: 500;">As of <strong>April 14, 2026</strong>, we have:</p>
             
             <div class="subtask">
                 <div class="subtask-icon"><i class="fas fa-code-branch"></i></div>
@@ -85,9 +87,9 @@
                 </div>
             </div>
             <div class="subtask">
-                <div class="subtask-icon"><i class="fas fa-chart-simple"></i></div>
+                <div class="subtask-icon"><i class="fas fa-chart-line"></i></div>
                 <div class="subtask-content">
-                    <div class="subtask-title">Agent Adaptation for 5‑Minute Granularity <span class="status-badge wip">Completed in Progress 2</span></div>
+                    <div class="subtask-title">Agent Adaptation for 5‑Minute Granularity <span class="status-badge">✅ Done</span></div>
                     <div class="subtask-desc">Extended <code>BaseAgentAStock_Hour</code> → <code>BaseAgentAStock_5min_DeepSeek</code>; full integration now done.</div>
                 </div>
             </div>
@@ -151,7 +153,7 @@
             <div class="subtask">
                 <div class="subtask-icon"><i class="fas fa-code"></i></div>
                 <div class="subtask-content">
-                    <div class="subtask-title">Code Artifact & Reproducibility</div>
+                    <div class="subtask-title">Code Artifact & Reproducibility <span class="status-badge">✅ Done</span></div>
                     <div class="subtask-desc">
                         The modified Agent class is saved as <code>agent/base_agent_astock/base_agent_astock_5min_deepseek.py</code>. Configuration file <code>configs/astock_5min_deepseek_config.json</code> is ready. Running <code>python main.py configs/astock_5min_deepseek_config.json</code> reproduces the results.
                     </div>
@@ -169,42 +171,135 @@
             <p style="margin-top:16px; background:#e1f5fe; padding:12px; border-radius:16px;"><i class="fas fa-trophy"></i> <strong>Key Achievement:</strong> MCP is no longer a blocker. The agent now works reliably, and the 5‑minute decision loop is validated with real DeepSeek inference.</p>
         </div>
 
-        <!-- News Expert Deep Dive (unchanged) -->
-        <div class="card fade-up">
-            <div class="card-header"><i class="fas fa-brain"></i><h2>📰 News Expert – Unified Market Intelligence</h2></div>
-            <div class="info-grid">
-                <div class="info-card"><h4>🎯 Goals</h4><p>Reduce token consumption & decision rounds by providing a consolidated market digest (macro + sector + major stocks) to all agents.</p></div>
-                <div class="info-card"><h4>⚙️ Architecture</h4><p>Periodic retrieval of global news → LLM summarization → structured report (market sentiment, hot sectors, affected stocks). Agents receive this report as part of their system prompt; on‑demand search tool allows deeper dive.</p></div>
-                <div class="info-card"><h4>✅ Benefits</h4><p>– Covers multi‑level information (macro, industry, individual)<br>– Avoids redundant per‑stock news queries<br>– Enables agents to react to breaking events within 5‑minute windows</p></div>
+        <!-- Progress 3 – Multi-Strategy & Backtest -->
+        <div class="card fade-up" id="progress3">
+            <div class="card-header"><i class="fas fa-chart-scatter"></i><h2>📊 Progress 3 · Multi‑Market Benchmark Platform</h2></div>
+            <p style="margin-bottom: 16px; font-weight: 500;">As of <strong>June 16, 2026</strong>, we have completed:</p>
+
+            <!-- Architecture Diagram -->
+            <div style="text-align:center; margin-bottom:24px;">
+                <img src="assets/benchmark_architecture.png" alt="Benchmark Architecture" style="max-width:100%; border-radius:16px; border:1px solid #eef2f6;">
             </div>
-            <p style="margin-top:16px; background:#eef3fc; padding:12px; border-radius:16px;"><i class="fas fa-microphone-alt"></i> <strong>Next steps:</strong> Implement the news fetching/summarization module and integrate it into the 5‑minute agent's decision loop.</p>
+
+            <div class="subtask">
+                <div class="subtask-icon"><i class="fas fa-layer-group"></i></div>
+                <div class="subtask-content">
+                    <div class="subtask-title">Multi‑Market LLM Trading Benchmark Architecture <span class="status-badge">✅ Success</span></div>
+                    <div class="subtask-desc">
+                        <ul style="margin-top:8px; margin-left:20px;">
+                            <li>Built a complete LLM Agent trading backtest framework from scratch, supporting <strong>US / HK / CN / Crypto</strong> four markets</li>
+                            <li>Adopted a <strong>6‑layer modular architecture</strong> with clear responsibilities and interface‑contract decoupling, each layer independently testable and replaceable:
+                                <ul style="margin-top:6px; margin-left:20px;">
+                                    <li><strong>Core Layer</strong> — type definitions, 15 ABC interfaces, TOML configuration loading</li>
+                                    <li><strong>Data Layer</strong> — market data loading, 8‑factor candidate filtering (liquidity / momentum / volatility / reversal / trend / activity / freshness / random exploration), incremental technical indicators (RSI / ATR / EMA / Bollinger Bands)</li>
+                                    <li><strong>Portfolio Layer</strong> — multi‑currency position management, unified USD NAV calculation, constraint engine, trade execution with commission &amp; slippage, settlement</li>
+                                    <li><strong>Agent Layer</strong> — 4‑layer prompt assembly, up to 8 rounds of LLM decision loop, 7 callable tools (market_overview / query_stock / query_macro etc.)</li>
+                                    <li><strong>Evaluation Layer</strong> — Sharpe / Sortino / max drawdown metrics, agent behavior analysis, weighted composite leaderboard</li>
+                                    <li><strong>Platform Layer</strong> — ExperimentRunner top‑level orchestration, SQLite 6‑table full‑pipeline logging</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subtask">
+                <div class="subtask-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="subtask-content">
+                    <div class="subtask-title">Trading Constraints &amp; Risk Control System <span class="status-badge">✅ Verified</span></div>
+                    <div class="subtask-desc">
+                        <ul style="margin-top:8px; margin-left:20px;">
+                            <li>Single position ≤25% NAV, single market ≤50%, Crypto ≤25%, minimum cash 5%</li>
+                            <li>Post‑buy cooldown 2h (12 bars), daily BUY limit 25 orders, per‑decision SELL cap 2</li>
+                            <li>CN market T+1 freeze flag (FROZEN), ghost position filtering (sold positions still appearing in holdings)</li>
+                            <li>Last buy time and daily trade count tracked, decision state reset per bar at runtime</li>
+                            <li>Weekend auto‑skip, force HOLD near market close</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subtask">
+                <div class="subtask-icon"><i class="fas fa-brain"></i></div>
+                <div class="subtask-content">
+                    <div class="subtask-title">Data &amp; Agent Context Optimization <span class="status-badge">✅ Done</span></div>
+                    <div class="subtask-desc">
+                        <ul style="margin-top:8px; margin-left:20px;">
+                            <li>Candidate table now includes recent 6‑bar price trajectory (raw K‑line data), providing LLM with short‑term trend reference</li>
+                            <li>Cost efficiency factor (0.03 weight) applied to candidate ranking — cheaper markets rank higher, contributing measurable return improvement</li>
+                            <li>4‑layer Context structure: MARKET_RULES → UNIVERSE → OPEN MARKETS → PORTFOLIO; restored full UNIVERSE of 281 securities</li>
+                            <li>Displays remaining BUY quota; incremental context marks cooldown stocks; enhanced three‑state trade feedback (OK / ADJUSTED / FAILED)</li>
+                            <li>Prompt rewrite: HOLD tendency 80%+, stop‑loss 2.5% / take‑profit 4%, RSI entry range 25–60, holding period 3–6h; market tri‑color grading (GREEN / YELLOW / RED)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subtask">
+                <div class="subtask-icon"><i class="fas fa-check-double"></i></div>
+                <div class="subtask-content">
+                    <div class="subtask-title">Runtime Validation &amp; Preliminary Conclusions <span class="status-badge">✅ Verified</span></div>
+                    <div class="subtask-desc">
+                        <ul style="margin-top:8px; margin-left:20px;">
+                            <li>Multi‑round testing completed using <strong>deepseek-v4-pro</strong> on baseline period 2026‑02‑03 ~ 02‑09; also tested <strong>mimo-v2.5-pro</strong> for cross‑comparison</li>
+                            <li>Overall pipeline is stable and reproducible; structured progress logs output at every decision point</li>
+                            <li>Primary trade failure causes: quantity=0, insufficient funds, market closed</li>
+                            <li>Current issue: expected return approximately 0%; DeepSeek exhibits decision variance — temperature &lt; 0.2 leads to excessive conservatism, while 0.3 variance overwhelms strategy edge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subtask">
+                <div class="subtask-icon"><i class="fas fa-globe"></i></div>
+                <div class="subtask-content">
+                    <div class="subtask-title">New Market Data Integration <span class="status-badge">✅ Done</span></div>
+                    <div class="subtask-desc">
+                        <ul style="margin-top:8px; margin-left:20px;">
+                            <li>Gold spot, crude oil spot, and US equity futures data have been acquired and integrated into the execution engine</li>
+                            <li>Reuses existing Data layer (<code>MarketDataProvider</code> + <code>UniverseRegistry</code>) and constraint engine; extended the <code>Market</code> enum and corresponding trading rules (<code>MarketRuleEngine</code>)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top:16px; background:#eef3fc; padding:12px; border-radius:16px;">
+                <i class="fas fa-forward"></i> <strong>Next Steps:</strong>
+                <ul style="margin-top:8px; margin-left:20px; margin-bottom:0;">
+                    <li>Verify stability of new markets (gold, crude oil, futures)</li>
+                    <li>Continue tuning constraint parameters, prompt strategies and further optimization to break through the current return bottleneck</li>
+                    <li>Test additional models (Qwen, GLM, GPT, etc.) for cross‑comparison</li>
+                </ul>
+            </div>
         </div>
 
-        <!-- Upcoming Progress 3 & 4 previews (updated) -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
-            <div class="card fade-up"><div class="card-header" style="border-bottom:none;"><i class="fas fa-chart-scatter"></i><h3>Progress 3 · Multi‑Strategy & Backtest</h3></div><p>Integrate the News Expert, run full backtest on 5‑minute data, compare performance against hourly baseline (Sharpe, max drawdown).</p><div class="progress-placeholder" style="background:#f3f6fc; padding:20px; border-radius:20px;"><i class="far fa-calendar-alt"></i> Mid‑June 2026</div></div>
-            <div class="card fade-up"><div class="card-header" style="border-bottom:none;"><i class="fas fa-file-powerpoint"></i><h3>Progress 4 & Final Delivery</h3></div><p>Webpage (this page), final technical report, and reproducible codebase with 5‑minute AI‑Trader.</p><div class="progress-placeholder" style="background:#f3f6fc; padding:20px; border-radius:20px;"><i class="fas fa-check-double"></i> July 17, 2026</div></div>
+        <!-- Progress 4 placeholder -->
+        <div class="card fade-up">
+            <div class="card-header" style="border-bottom:none;"><i class="fas fa-trophy"></i><h3>🏁 Progress 4 · Cross‑Model Benchmark &amp; Delivery</h3></div>
+            <p>Building on the Progress 3 benchmark platform, the final phase focuses on the last mile: integrating multiple models, producing cross‑comparison conclusions, finalizing the platform, and authoring the technical report. The project concludes with reproducible experimental evidence.</p>
+            <div class="progress-placeholder" style="background:#f3f6fc; padding:20px; border-radius:20px; text-align:center;"><i class="far fa-calendar-alt"></i> July 17, 2026</div>
         </div>
 
-        <!-- Risk Management (unchanged) -->
+        <!-- Risk Management -->
         <div class="card fade-up" style="background:#fffef7; border-left: 6px solid #f4b942;">
             <div class="card-header"><i class="fas fa-shield-hazard"></i><h2>⚠️ Risk Management</h2></div>
-            <div><i class="fas fa-microchip"></i> <strong>Data volume:</strong> 5‑minute data is 12× hourly → parquet + incremental processing.</div>
-            <div><i class="fas fa-clock"></i> <strong>LLM latency:</strong> Direct API calls (no MCP) reduce overhead; < 500ms per call.</div>
-            <div><i class="fas fa-chart-line"></i> <strong>Overfitting:</strong> Strict time‑based splits will be applied in backtest.</div>
+            <div style="margin-bottom:8px;"><i class="fas fa-database"></i> <strong>Multi‑market data quality:</strong> US / HK / CN / Crypto markets differ in data sources, frequency, and time zones — data alignment and cleaning remain ongoing challenges.</div>
+            <div style="margin-bottom:8px;"><i class="fas fa-dice-d6"></i> <strong>LLM decision variance:</strong> DeepSeek shows significant variance at temperature 0.3 with expected return ~0%; lower temperature leads to excessive conservatism — balancing exploration vs. stability is critical.</div>
+            <div style="margin-bottom:8px;"><i class="fas fa-scale-balanced"></i> <strong>Cross‑model consistency:</strong> Different LLMs (DeepSeek / Mimo / Qwen / GLM / GPT) respond differently to identical prompts — fair comparison methodology and evaluation standards are not yet established.</div>
+            <div><i class="fas fa-chart-line"></i> <strong>Overfitting:</strong> Baseline period is only one week (Feb 3–9); constraint parameters and prompt strategies may over‑adapt to this specific window.</div>
         </div>
 
-        <!-- Overall Progress (increased to 60%) -->
+        <!-- Overall Progress (increased to 70%) -->
         <div class="card fade-up" style="text-align:center;">
             <h3>Overall Project Completion</h3>
             <div style="background:#e2e8f0; border-radius:30px; margin:20px 0; height:20px;"><div id="progressFill" style="width:0%; background:#2b6e4e; height:20px; border-radius:30px;"></div></div>
-            <p id="progressPercent">Current progress: ~60% (data pipeline + direct DeepSeek agent)</p>
-            <p style="font-size:0.85rem;">Remaining: news expert integration, full backtest, optimization & report writing.</p>
+            <p id="progressPercent">Current progress: ~70% (multi‑market benchmark + backtest framework)</p>
+            <p style="font-size:0.85rem;">Remaining: new market validation, constraint & prompt tuning, cross‑model comparison & report writing.</p>
         </div>
 
         <footer>
             <p><i class="fab fa-github"></i> Repository | Advisor: Prof. QIU | Team: AI-Trader Optimization Group</p>
-            <p>📅 Last updated: May 5, 2026 — Progress 2 achieved.</p>
+            <p>📅 Last updated: June 16, 2026 — Progress 3 achieved.</p>
         </footer>
     </div>
 </div>
@@ -214,8 +309,8 @@
     const obs = new IntersectionObserver(entries => { entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold:0.1 });
     faders.forEach(el => obs.observe(el));
     let width = 0;
-    const target = 60;   // Increased to 60% after Progress 2
-    const interval = setInterval(() => { if(width >= target) clearInterval(interval); else { width+=0.5; document.getElementById('progressFill').style.width = width+'%'; document.getElementById('progressPercent').innerText = `Current progress: ~${Math.floor(width)}% (5‑min pipeline + direct DeepSeek agent)`; } }, 50);
+    const target = 70;   // Increased to 70% after Progress 3
+    const interval = setInterval(() => { if(width >= target) clearInterval(interval); else { width+=0.5; document.getElementById('progressFill').style.width = width+'%'; document.getElementById('progressPercent').innerText = `Current progress: ~${Math.floor(width)}% (multi‑market benchmark + backtest framework)`; } }, 50);
 </script>
 </body>
 </html>
